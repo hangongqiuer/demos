@@ -66,7 +66,7 @@ class Circle {
   area() {
     console.log('call area', this.radius);
     return Math.pow(this.radius, 2) * Math.PI;
-  };
+  }
 
   get radius() {
     console.log('call get radius');
@@ -83,5 +83,11 @@ class Circle {
 }
 
 var circle = new Circle(2);
-//这样调用会报错,why
-console.log(circle.radius(3));
+
+console.log(circle.area());
+console.log(circle.radius);
+
+circle.radius = 4;
+console.log(circle.radius);
+
+//how about draw?? o(╯□╰)o
