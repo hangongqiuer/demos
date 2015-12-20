@@ -121,7 +121,7 @@ aPromise.then(function (value) {
 });
 aPromise.then(function (value) {
   console.log("<c>: " + value); // => 100
-})
+});
 
 // vs
 
